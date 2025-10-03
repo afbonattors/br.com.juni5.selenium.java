@@ -30,6 +30,12 @@ public class paginaEcommerceTest {
         //Navega até a página "Automation Exercise"
         browser.get("https://automationexercise.com/");
 
+        //Identifica o logo na Home
+        WebElement logoHome = browser.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[1]/div/a/img"));
+
+        //Valida se o logo na página Home é exibido
+        assertTrue(logoHome.isDisplayed(), "Logo da homepage não está sendo exibido!");
+
         //Valida nome da página home
         assertEquals("Automation Exercise", browser.getTitle(), "O título da página não foi validado com sucesso!");
 
