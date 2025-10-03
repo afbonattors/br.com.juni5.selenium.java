@@ -14,9 +14,9 @@ O projeto utiliza como base o site [Automation Exercise](https://automationexerc
 
 ## 📌 Objetivos do Projeto
 
-✔️ Demonstrar criação e execução de testes automatizados
-✔️ Aplicar boas práticas de automação (estruturas de testes e asserts)
-✔️ Simular cenários reais de testes em um e-commerce
+✔️ Demonstrar criação e execução de testes automatizados \
+✔️ Aplicar boas práticas de automação (estruturas de testes e asserts) \
+✔️ Simular cenários reais de testes em um e-commerce \
 ✔️ Servir como referência de portfólio profissional
 
 ---
