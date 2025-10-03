@@ -1,0 +1,64 @@
+# 🧪 Projeto de Automação de Testes - Selenium + Java + JUnit5
+
+Este repositório faz parte do meu **portfólio profissional**, com o objetivo de demonstrar conhecimentos em **automação de testes de interface (UI)** utilizando as seguintes tecnologias:
+
+- **Java** (linguagem principal)
+- **JUnit 5** (framework de testes)
+- **Selenium WebDriver** (automação de navegadores)
+- **Maven** (gerenciamento de dependências)
+- **Git/GitHub** (versionamento e colaboração)
+
+O projeto utiliza como base o site [Automation Exercise](https://automationexercise.com/) para execução dos testes.
+
+---
+
+## 📌 Objetivos do Projeto
+
+✔️ Demonstrar criação e execução de testes automatizados
+✔️ Aplicar boas práticas de automação (estruturas de testes e asserts)
+✔️ Simular cenários reais de testes em um e-commerce
+✔️ Servir como referência de portfólio profissional
+
+---
+
+## ⚙️ Pré-requisitos
+
+Antes de rodar o projeto, certifique-se de ter instalado:
+
+- [Java 11+](https://adoptium.net/)
+- [Maven](https://maven.apache.org/)
+- [Google Chrome](https://www.google.com/chrome/)
+- [ChromeDriver](https://chromedriver.chromium.org/downloads) (compatível com sua versão do Chrome)
+
+---
+
+## 📊 Exemplo de Cenário Automatizado
+
+1. Acessar a página inicial do e-commerce
+2. Validar o título da página
+3. Navegar até a página **Products**
+4. Validar a exibição do banner de desconto (imagem de 50%)
+
+---
+
+## 📌 Próximos Passos
+
+- Implementar **Page Object Model (POM)** para maior organização
+- Adicionar relatórios automatizados (**Allure Reports** / **Extent Reports**)
+- Expandir os cenários de testes para outras funcionalidades do site
+
+---
+
+## 👨‍💻 Autor
+
+**Andre Bonatto**
+💼 Portfólio focado em **Automação de Testes**
+🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andre-bonatto/)
+ | [GitHub](https://github.com/afbonattors)
+
+
+## ▶️ Como executar os testes
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/afbonattors/br.com.selenium.junit5.java.git
