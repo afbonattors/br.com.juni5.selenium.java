@@ -19,7 +19,7 @@ public class PaginaEcommerceTest {
     //Abre o navegador
     @BeforeAll
     public static void setUp(){
-        System.setProperty("webdriver.chrome.driver", "E:\\Selenium WebDriver Java JUnit5\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:\\Selenium WebDriver Java JUnit5\\br.com.juni5.selenium.java\\drivers\\chromedriver.exe");
         browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
