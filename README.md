@@ -53,6 +53,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 
 **Andre Bonatto**
 💼 Portfólio focado em **Automação de Testes**
+
 🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andre-bonatto/)
 🔗 [![GitHub](https://img.shields.io/badge/GitHub-%2312100E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/afbonattors)
 
