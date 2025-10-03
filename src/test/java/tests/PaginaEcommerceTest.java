@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 
-public class paginaEcommerceTest {
+public class PaginaEcommerceTest {
 
     public static WebDriver browser;
 

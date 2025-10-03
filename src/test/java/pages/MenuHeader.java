@@ -3,9 +3,9 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static tests.paginaEcommerceTest.browser;
+import static tests.PaginaEcommerceTest.browser;
 
-public class menuHeader {
+public class MenuHeader {
     WebElement paginaHome = browser.findElement(By.cssSelector("a[href='/home']"));
     WebElement paginaProduto = browser.findElement(By.cssSelector("a[href='/products']"));
     WebElement paginaCarrinho = browser.findElement(By.cssSelector("a[href='/view_cart']"));
