@@ -1,15 +1,11 @@
-//package pages;
-//
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.WebElement;
-//
-//
-//public class pageHome {
-//    WebElement menuHome = browser.findElement(By.className("/"));
-//    WebElement menuHome = browser.findElement(By.linkText("/products"));
-//    WebElement menuHome = browser.findElement(By.className("/view_cart"));
-//    WebElement menuHome = browser.findElement(By.className("/login"));
-//
-//
-//
-//}
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import static tests.paginaEcommerceTest.browser;
+
+
+public class pageHome {
+    WebElement carrocelHome = browser.findElement(By.xpath("//*[@id=\"slider-carousel\"]/div"));
+}

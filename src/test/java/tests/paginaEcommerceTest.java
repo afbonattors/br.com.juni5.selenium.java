@@ -14,7 +14,7 @@ import java.time.Duration;
 
 public class paginaEcommerceTest {
 
-    private static WebDriver browser;
+    public static WebDriver browser;
 
     //Abre o navegador
     @BeforeAll
