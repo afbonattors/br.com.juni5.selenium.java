@@ -27,7 +27,7 @@ public class PaginaEcommerceTest {
         //Identifica o logo na Home
         WebElement logoHome = browser.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[1]/div/a/img"));
 
-        //Valida se o logo na página Home é exibido
+        //Vealida se o logo na página Home é exibido
         assertTrue(logoHome.isDisplayed(), "Logo da homepage não está sendo exibido!");
         Screenshot.tirarPrintScreen(browser, "E:\\Selenium WebDriver Java JUnit5\\test-report\\automationexercise.com\\" + Generator.dataHoraParaArquivo() + "validaLogoHome.jpg");
 
