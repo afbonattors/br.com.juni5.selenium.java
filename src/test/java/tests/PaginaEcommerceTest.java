@@ -22,7 +22,7 @@ public class PaginaEcommerceTest {
     @Test
     public void testHomeEcommerce(){
 
-        browser = Web.criaChrome().;
+        browser = Web.criaChrome();
 
         //Identifica o logo na Home
         WebElement logoHome = browser.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[1]/div/a/img"));
