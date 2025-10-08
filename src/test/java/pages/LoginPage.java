@@ -1,37 +1,3 @@
-//package pages;
-//
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.WebElement;
-//
-//public class LoginPage {
-//
-//    private WebDriver browser;
-//
-//    public LoginPage(WebDriver browser) {
-//        this.browser = browser;
-//    }
-//
-//    //Localizadores
-//    WebElement textoLoginAccount = browser.findElement(By.xpath("//*[@id=\\\"form\\\"]/div/div/div[1]/div/h2"));
-//    WebElement fieldEmailAddress = browser.findElement(By.name("email"));
-//    WebElement fieldPassWord = browser.findElement(By.name("password"));
-//    WebElement btnLogin = browser.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/button"));
-//
-//    public void preencheEnderecoEmail() {
-//        browser.findElement(fieldEmailAddress).sendKeys("afbonattoo@gmail.com");
-//    }
-//
-//    public void preenchePassWord() {
-//        browser.findElement(fieldPassWord).sendKeys("1a2b3c4d");
-//    }
-//
-//    public void clicaBtnLogin() {
-//        browser.findElement(btnLogin).click();
-//    }
-//
-//}
-
 package pages;
 
 import org.openqa.selenium.By;
@@ -39,35 +5,41 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
 
-    private WebDriver browser;
+    private WebDriver driver;
 
     // Construtor
-    public LoginPage(WebDriver browser) {
-        this.browser = browser;
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    // 🔹 Localizadores (somente By)
-    private By fieldEmailAddress = By.name("email");
-    private By fieldPassWord = By.name("password");
-    private By btnLogin = By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/button");
-    private By textoLoginAccount = By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/h2");
+    // Localizadores
+    private By campoEmail = By.name("email");
+    private By campoSenha = By.name("password");
+    private By botaoLogin = By.xpath("//button[contains(text(),'Login')]");
+    private By mensagemErro = By.xpath("//p[contains(text(),'Your email or password is incorrect!')]");
 
-    // 🔹 Ações
-    public void preencheEnderecoEmail(String email) {
-        browser.findElement(fieldEmailAddress).sendKeys("afbonattoo@gmail.com");
+    // Ações
+    public LoginPage preencherEmail(String email) {
+        driver.findElement(campoEmail).sendKeys(email);
+        return this;
     }
 
-    public void preenchePassWord(String senha) {
-        browser.findElement(fieldPassWord).sendKeys("1a2b3c4d");
+    public LoginPage preencherSenha(String senha) {
+        driver.findElement(campoSenha).sendKeys(senha);
+        return this;
     }
 
-    public void clicaBtnLogin() {
-        browser.findElement(btnLogin).click();
+    public LoginPage clicarBotaoLogin() {
+        driver.findElement(botaoLogin).click();
+        return this;
     }
 
-    // 🔹 Validação (opcional)
-    public String obterTextoLoginAccount() {
-        return browser.findElement(textoLoginAccount).getText();
+    // Validação
+    public boolean isMensagemErroVisivel() {
+        try {
+            return driver.findElement(mensagemErro).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
-

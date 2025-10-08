@@ -3,16 +3,24 @@ package suporte;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.io.FileHandler;
+
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Screenshot {
-    public static void tirarPrintScreen(WebDriver browser, String arquivo) {
-        File screenshot = ((TakesScreenshot) browser).getScreenshotAs(OutputType.FILE);
+
+    // ⚠️ Nome do método deve ser exatamente tirarPrint
+    public static void tirarPrint(WebDriver driver, String nomeArquivo) {
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileHandler.copy(screenshot, new File(arquivo));
-        } catch (Exception e) {
-            System.out.println("Houve problema ao copiar o arquivo para a pasta: " + e.getMessage());
+            // Cria pasta se não existir
+            Files.createDirectories(Paths.get("target/screenshots"));
+            Files.copy(screenshot.toPath(), Paths.get("target/screenshots", nomeArquivo));
+            System.out.println("📸 Screenshot salvo em: target/screenshots/" + nomeArquivo);
+        } catch (IOException e) {
+            System.out.println("❌ Erro ao salvar o screenshot: " + e.getMessage());
         }
     }
 }
