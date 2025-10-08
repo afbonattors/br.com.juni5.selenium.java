@@ -9,15 +9,17 @@ import suporte.Screenshot;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class LoginInvalidoTest {
 
-    private WebDriver driver;
-    private LoginPage loginPage;
+    private static WebDriver driver;
+    private static LoginPage loginPage;
 
     @BeforeAll
-    public void setUp() {
+    public static void setUp() {
+        // Usa a classe Web para criar o driver
         driver = Web.criaChrome();
+
+        // Instancia a página de login diretamente
         driver.get("https://automationexercise.com/login");
         loginPage = new LoginPage(driver);
     }
@@ -38,14 +40,13 @@ public class LoginInvalidoTest {
 
     @AfterEach
     public void tirarPrintAposTeste() {
+        // Gera screenshot com data/hora
         String dataHora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
         Screenshot.tirarPrint(driver, "LoginInvalido_" + dataHora + ".png");
     }
 
     @AfterAll
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+    public static void tearDown() {
+        Web.fecharDriver();
     }
 }
