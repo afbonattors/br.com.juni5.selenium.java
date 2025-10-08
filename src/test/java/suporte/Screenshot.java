@@ -21,6 +21,6 @@ public class Screenshot {
             System.out.println("📸 Screenshot salvo em: target/screenshots/" + nomeArquivo);
         } catch (IOException e) {
             System.out.println("❌ Erro ao salvar o screenshot: " + e.getMessage());
-        }r
+        }
     }
 }
