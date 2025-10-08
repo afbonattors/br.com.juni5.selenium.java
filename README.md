@@ -14,9 +14,9 @@ O projeto utiliza como base o site [Automation Exercise](https://automationexerc
 
 ## 📌 Objetivos do Projeto
 
-✔️ Demonstrar criação e execução de testes automatizados \
-✔️ Aplicar boas práticas de automação (estruturas de testes e asserts) \
-✔️ Simular cenários reais de testes em um e-commerce \
+✔️ Demonstrar criação e execução de testes automatizados  
+✔️ Aplicar boas práticas de automação (estruturas de testes e asserts)  
+✔️ Simular cenários reais de testes em um e-commerce  
 ✔️ Servir como referência de portfólio profissional
 
 ---
@@ -51,7 +51,9 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 
 ## 👨‍💻 Autor
 
-**Andre Bonatto**
+**Andre Bonatto**  
+![Andre_Bonatto](https://media.licdn.com/dms/image/v2/D4D03AQE51sG1digwVQ/profile-displayphoto-scale_200_200/B4DZl5eA4PH0AY-/0/1758679537835?e=1762992000&v=beta&t=4clk8X7PTvipJgl8IZFxF7tnhF3L7MbHeBudB_-kDzQ)
+
 💼 Portfólio focado em **Automação de Testes**
 
 🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andre-bonatto/)
